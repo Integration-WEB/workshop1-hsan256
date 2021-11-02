@@ -20,7 +20,35 @@ ________________________
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
 html {
     font-size: 100%; /* 16px default*/
-} 
+}
+
+.font__container {
+    height: auto;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.font__1em {
+    font-size: 1em;
+}
+
+.font__1rem {
+    font-size: 1rem;
+}
+
+.font__100percent {
+    font-size: 100%;
+}
+
+.font__2em {
+    font-size: 2em;
+}
+.font__2rem {
+    font-size: 2rem;
+}
+.font__200percent {
+    font-size: 200%;
+}
 
 /*
 ________________________
@@ -162,10 +190,13 @@ ________________________
 
 .item1{
     background-color: rgb(255, 190, 225);
+    position: sticky;
+    top: 50px;
+    left: 50px;
 }
 
 .item2{
-    background-color: rgb(131, 204, 233)
+    background-color: rgb(131, 204, 233);
 }
 
 /*
@@ -185,10 +216,26 @@ ________________________
     background-color: var(--primary-300);
 }
 
-.font__container {
+.font__container {  
     height: auto;
     margin: 10px;
     font-size: 25px;
+}
+
+.box__percent {
+    width: 50%;
+}
+
+.box__pixels {
+width: 200px;
+}
+
+.box__vw {
+    width: 50vw;
+}
+
+.box__vh {
+height: 20vh;
 }
 
 
@@ -201,6 +248,10 @@ ________________________
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-content: space-between; */
 }
 
 /*
@@ -214,20 +265,41 @@ ________________________
     margin-bottom: 50px;
     background-color: var(--primary-100);
 }
+
 /* Extra small devices (phones, 600px and down) */
-
-
+@media screen and (max-width: 600px) {
+    .media__container{
+        background-color: var(--primary-200);
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-
+@media screen and (max-width: 600px) {
+    .media__container{
+        background-color: var(--primary-200);
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-
+@media screen and (max-width: 768px) {
+    .media__container{
+        background-color: var(--primary-400);
+    }
+}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-
+@media screen and (max-width: 992px) {
+    .media__container{
+        background-color: var(--primary-600);
+    }
+}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {
+    .media__container{
+        background-color: var(--primary-800);
+    }
+}
